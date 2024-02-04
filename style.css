@@ -1,0 +1,114 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #362422;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#results table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+#results th,
+#results td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ball-picker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.golden-ball,
+.silver-ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.golden-ball {
+    background-image: radial-gradient(circle at 30% 30%, #ffd700, #a67c00);
+}
+
+.silver-ball {
+    background-image: radial-gradient(circle at 30% 30%, #c0c0c0, #757575);
+}
+
+.ball-container {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+    /* Spacing between the boxes and the button */
+}
+
+.box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to bottom, #f5f5f5 0%, rgb(160, 158, 66) 100%);
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
+    width: 220px;
+    height: 150px;
+}
+
+
+button {
+    background-color: #4CAF50;
+    font-size: 1em;
+    color: white;
+    padding: 15px 15px;
+    border: none;
+    cursor: pointer;
+    /* transition: background-color 0.4s; */
+}
+
+/* add active style for button2 class */
+button.button2.active {
+    background-color: #3e8e41;
+    transform: translateY(2px);
+}
+
+.separator {
+    margin: 60px 0;
+    border-top: 1px solid #bbb;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+
+
+.highlight {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 5px #0066ff;
+    border: 2px solid #7187b3;
+}
+
+.highlight2 {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 5px #ff0000;
+    border: 2px solid #ff0000;
+}
+
+.disabledButton {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: wait;
+}

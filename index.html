@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bertrand's Box Paradox Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>
+        Paradox Simulator</h1>
+    <hr class="separator">
+    <div>
+        <button id="pick" > 👇🏽Pick first ball randomly</button>
+        <button class="button2" onclick="autoPick(100)">Auto Pick 100</button>
+        <button class="button2" onclick="autoPick(10000)">Auto Pick പൈനായിരം times</button>
+    </div>
+    <div class="ball-picker">
+        <div class="box">
+            <div class="golden-ball ball" id="ball-1"></div>
+            <div class="golden-ball ball" id="ball-2"></div>
+        </div>
+        <div class="box">
+            <div class="golden-ball ball" id="ball-3"></div>
+            <div class="silver-ball ball" id="ball-4"></div>
+        </div>
+        <div class="box">
+            <div class="silver-ball ball" id="ball-5"></div>
+            <div class="silver-ball ball" id="ball-6"></div>
+        </div>
+    </div>
+    <hr class="separator">
+    <button class="button2" onclick="clearResults()">Clear Results</button>
+    <div id="results">
+        <h2>Results so far</h2>
+        <table>
+            <tr>
+                <th></th>
+                <th colspan="2">Gold</th>
+                <th colspan="2">Silver</th>
+            </tr>
+            <tr>
+                <td>First pick</td>
+                <td id="firstPickGold">0</td>
+                <td id="firstPickGoldPercentage">50%</td>
+                <td id="firstPickSilver">0</td>
+                <td id="firstPickSilverPercentage">50%</td>
+            </tr>
+            <tr>
+                <td>Second pick</td>
+                <td id="secondPickGold">0</td>
+                <td id="secondPickGoldPercentage">50%</td>
+                <td id="secondPickSilver">0</td>
+                <td id="secondPickSilverPercentage">50%</td>
+            </tr>
+            <tr>
+                <td>Second pick after the first is gold</td>
+                <td id="secondPickAfterGold">0</td>
+                <td id="secondPickAfterGoldPercentage">50%</td>
+                <td id="secondPickAfterSilver">0</td>
+                <td id="secondPickAfterSilverPercentage">50%</td>
+            </tr>
+        </table>
+        <p>Total trials: <span id="totalTrials">0</span></p>
+    </div>
+    <hr class="separator">
+    <p></p>
+        പകർപ്പവകാശം എനിക്ക്  വേണ്ട
+        <br>
+        - വിശാല മനസ്കൻ ജയ്
+    </p>
+    <script src="script.js"></script>
+</body>
+
+</html>
